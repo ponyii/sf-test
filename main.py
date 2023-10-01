@@ -101,4 +101,4 @@ with Session(engine) as session:
         re = generate_regex(project_id, session)
         rules.append(Rule(regexp=re, project_id=project_id))
     session.add_all(rules)
-    # session.commit()
+    session.commit()
